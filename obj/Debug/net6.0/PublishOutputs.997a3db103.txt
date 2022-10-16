@@ -1,0 +1,7 @@
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/AraVirtualTour
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/appsettings.Development.json
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/appsettings.json
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/AraVirtualTour.dll
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/AraVirtualTour.deps.json
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/AraVirtualTour.runtimeconfig.json
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/publish/AraVirtualTour.pdb
