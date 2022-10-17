@@ -31,6 +31,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/ubuntu/AraVirtualTour/Pages/Staff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ubuntu/AraVirtualTour/Pages/ToolsHelp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG9vbHNIZWxwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ubuntu/AraVirtualTour/Pages/VirtualTour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlydHVhbFRvdXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ubuntu/AraVirtualTour/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
