@@ -2,6 +2,13 @@
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/appsettings.Development.json
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/appsettings.json
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.dll
-/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.deps.json
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.runtimeconfig.json
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.pdb
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.Relational.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.Caching.Memory.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.DependencyInjection.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/MySqlConnector.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Pomelo.EntityFrameworkCore.MySql.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.deps.json

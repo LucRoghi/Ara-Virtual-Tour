@@ -24,3 +24,13 @@
 /home/ubuntu/AraVirtualTour/obj/Release/net6.0/ref/AraVirtualTour.dll
 /home/ubuntu/AraVirtualTour/obj/Release/net6.0/AraVirtualTour.pdb
 /home/ubuntu/AraVirtualTour/obj/Release/net6.0/AraVirtualTour.genruntimeconfig.cache
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Humanizer.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/MySqlConnector.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/ubuntu/AraVirtualTour/obj/Release/net6.0/AraVirtualTour.csproj.CopyComplete
