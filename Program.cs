@@ -1,5 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("AraVirtualTourDB");
+builder.Services.AddDbContext<ApplicationDbContext>(options => {
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 
