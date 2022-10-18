@@ -6,11 +6,11 @@ namespace AraVirtualTour.Models
 
         [Required(ErrorMessage = "Username is Required")]
         [StringLength(maximumLength:100, MinimumLength = 2)]
-        public string Username {get; set;}
+        public string? Username {get; set;}
 
         [Required(ErrorMessage = "Password is Required")]
         [StringLength(maximumLength: 16, MinimumLength = 8)]
-        public string Password {get; set;}
+        public string? Password {get; set;}
 
 
     }
