@@ -23,6 +23,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/ubuntu/AraVirtualTourMVC/Views/Home/Staff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TdGFmZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ubuntu/AraVirtualTourMVC/Views/Home/VirtualTour.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WaXJ0dWFsVG91ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

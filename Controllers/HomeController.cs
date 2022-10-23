@@ -18,6 +18,18 @@ public class HomeController : Controller
         return View();
     }
 
+
+    public IActionResult VirtualTour()
+    {
+        return View();
+    }
+
+
+    public IActionResult Staff()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

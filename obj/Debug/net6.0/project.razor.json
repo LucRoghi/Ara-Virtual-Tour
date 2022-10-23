@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ubuntu/AraVirtualTourMVC/Views/Home/Staff.cshtml",
+      "TargetPath": "Views\\Home\\Staff.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ubuntu/AraVirtualTourMVC/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
