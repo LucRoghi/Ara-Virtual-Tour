@@ -1,2 +1,0 @@
-# From within the ~/AraVirtualTourFolder
-sudo rsync bin/Release/net6.0/publish/* /var/www/app/public_html/
