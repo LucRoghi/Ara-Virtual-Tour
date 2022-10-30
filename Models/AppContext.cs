@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace AraVirtualTour
 {
-    public class AppContext : IdentityDbContext<AppUser>
+    public class AppContext : IdentityDbContext<AppUserModel>
     {
         protected readonly IConfiguration Configuration;
 
@@ -26,7 +26,7 @@ namespace AraVirtualTour
             options.UseSqlite(connectionString);
         }
 
-        public DbSet<AppUser>? AppUser { get; set; }
+        public DbSet<AppUserModel>? AppUser { get; set; }
         public DbSet<StaffModel>? StaffModel { get; set; }
         public DbSet<VirtualTourModel>? VirtualTourModel { get; set; }
 

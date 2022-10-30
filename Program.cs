@@ -16,10 +16,9 @@ var connectionString = builder.Configuration.GetConnectionString("AppDB");
 builder.Services.AddDbContext<AraVirtualTour.AppContext>(options =>
     options.UseSqlite(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(
-    options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()
+builder.Services.AddIdentity<AraVirtualTour.AppUserModel, IdentityRole>()
     .AddEntityFrameworkStores<AraVirtualTour.AppContext>();
+builder.Services.AddCoreAdmin();
 
 var app = builder.Build();
 

@@ -5,6 +5,10 @@
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.runtimeconfig.json
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.pdb
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/DotNetEd.CoreAdmin.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.AspNetCore.Identity.UI.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Data.Sqlite.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -13,6 +17,9 @@
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.Caching.Memory.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.DependencyInjection.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.DependencyModel.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.FileProviders.Embedded.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.Identity.Core.dll
+/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Extensions.Identity.Stores.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Mvc.Grid.Core.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/SQLitePCLRaw.batteries_v2.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/SQLitePCLRaw.core.dll

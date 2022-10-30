@@ -8,8 +8,8 @@ namespace AraVirtualTour
     public class StaffModel
     {
         public int id {get; set;}
-        public string Title {get; set;}
-        public string Name {get; set;}
-        public string Department {get; set;}
+        public string? Title {get; set;}
+        public string? Name {get; set;}
+        public string? Department {get; set;}
     }
 }

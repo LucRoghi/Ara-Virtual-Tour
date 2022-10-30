@@ -8,6 +8,6 @@ namespace AraVirtualTour
     public class VirtualTourModel
     {
         public int id {get; set;}
-        public string Link {get; set;}
+        public string? Link {get; set;}
     }
 }
