@@ -53,3 +53,6 @@
 /home/ubuntu/AraVirtualTour/obj/Debug/net6.0/ref/AraVirtualTour.dll
 /home/ubuntu/AraVirtualTour/obj/Debug/net6.0/AraVirtualTour.pdb
 /home/ubuntu/AraVirtualTour/obj/Debug/net6.0/AraVirtualTour.genruntimeconfig.cache
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/DotNetEd.CoreAdmin.dll
+/home/ubuntu/AraVirtualTour/bin/Debug/net6.0/Mvc.Grid.Core.dll
+/home/ubuntu/AraVirtualTour/obj/Debug/net6.0/AraVirtualTour.MvcApplicationPartsAssemblyInfo.cs

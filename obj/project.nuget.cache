@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6cgdCFCObwTcxH0t743Yb/5kRk3gcfO3WLDSPuxBA1Oe6CRu+KNhvO7Y48Bw9NaSLgiD8o/cqippb1EjHZhPNA==",
+  "dgSpecHash": "gMiy0MZG6qqvvv59D/eLmOSudX7MmOKNlbwyW8Mm2XzUh2qGYVRcIRTWJVlF/hPDk/uhCkaj00nnAaB1BWkasQ==",
   "success": true,
   "projectFilePath": "/home/ubuntu/AraVirtualTour/AraVirtualTour.csproj",
   "expectedPackageFiles": [
+    "/home/ubuntu/.nuget/packages/coreadmin/2.6.3/coreadmin.2.6.3.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/microsoft.data.sqlite.core/6.0.10/microsoft.data.sqlite.core.6.0.10.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/microsoft.entityframeworkcore/6.0.10/microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
@@ -24,6 +25,7 @@
     "/home/ubuntu/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/nonfactors.grid.core.mvc6/7.0.0/nonfactors.grid.core.mvc6.7.0.0.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/home/ubuntu/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",

@@ -14245,6 +14245,23 @@
         }
       },
       {
+        "HashCode": -235244480,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CoreAdminMenuViewComponentTagHelper",
+        "AssemblyName": "DotNetEd.CoreAdmin",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:core-admin-menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CoreAdminMenuViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CoreAdminMenu"
+        }
+      },
+      {
         "HashCode": -426684152,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -16305,6 +16322,11 @@
     {
       "FilePath": "/home/ubuntu/AraVirtualTour/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ubuntu/AraVirtualTour/Views/Home/VirtualTour.cshtml",
+      "TargetPath": "Views\\Home\\VirtualTour.cshtml",
       "FileKind": "mvc"
     },
     {
