@@ -16345,8 +16345,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ubuntu/AraVirtualTour/Views/Home/UsingAraResources.cshtml",
+      "TargetPath": "Views\\Home\\UsingAraResources.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ubuntu/AraVirtualTour/Views/Home/Staff.cshtml",
+      "TargetPath": "Views\\Home\\Staff.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ubuntu/AraVirtualTour/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/ubuntu/AraVirtualTour/Views/Home/AdminPanel.cshtml",
+      "TargetPath": "Views\\Home\\AdminPanel.cshtml",
       "FileKind": "mvc"
     },
     {

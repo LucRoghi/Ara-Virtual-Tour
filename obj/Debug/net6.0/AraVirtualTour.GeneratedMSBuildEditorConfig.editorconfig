@@ -15,12 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/ubuntu/AraVirtualTour
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/ubuntu/AraVirtualTour/Views/Home/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZG1pblBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ubuntu/AraVirtualTour/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ubuntu/AraVirtualTour/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ubuntu/AraVirtualTour/Views/Home/Staff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TdGFmZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ubuntu/AraVirtualTour/Views/Home/UsingAraResources.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Vc2luZ0FyYVJlc291cmNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ubuntu/AraVirtualTour/Views/Home/VirtualTour.cshtml]
