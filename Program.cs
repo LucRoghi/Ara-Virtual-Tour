@@ -1,11 +1,25 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using AraVirtualTour.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddCoreAdmin();
+var connectionString = builder.Configuration.GetConnectionString("AppDB");
+
+builder.Services.AddDbContext<AraVirtualTour.AppContext>(options =>
+    options.UseSqlite(connectionString));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(
+    options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AraVirtualTour.AppContext>();
 
 var app = builder.Build();
 

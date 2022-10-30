@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/ubuntu/AraVirtualTour
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/ubuntu/AraVirtualTour/Views/Home/AdminPanel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZG1pblBhbmVsLmNzaHRtbA==
+[/home/ubuntu/AraVirtualTour/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ubuntu/AraVirtualTour/Views/Home/Index.cshtml]

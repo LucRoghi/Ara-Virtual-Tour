@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace AraVirtualTour
 {
-    public class AppContext : DbContext 
+    public class AppContext : IdentityDbContext<AppUser>
     {
         protected readonly IConfiguration Configuration;
 
@@ -17,10 +18,17 @@ namespace AraVirtualTour
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite(Configuration.GetConnectionString("AppDB"));
+            var configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json")
+            .Build();
+            var connectionString = configuration.GetConnectionString("AppDB");
+            options.UseSqlite(connectionString);
         }
 
-        public DbSet<UserModel> Users {get; set;}
+        public DbSet<AppUser>? AppUser { get; set; }
+        public DbSet<StaffModel>? StaffModel { get; set; }
+        public DbSet<VirtualTourModel>? VirtualTourModel { get; set; }
 
     }
 }
