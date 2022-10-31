@@ -1,8 +1,15 @@
+@model IEnumerable<AraVirtualTour.StaffModel>
+
 @{
     ViewData["Title"] = "Meet the Staff";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Staff</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach (var item in Model) {
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+            <p class="card-text">@Html.DisplayFor(modelItem => item.Title) In @Html.DisplayFor(modelItem => item.Department)</p>
+        </div>
+    </div>
+}

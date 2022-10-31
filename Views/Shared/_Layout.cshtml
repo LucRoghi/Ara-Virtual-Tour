@@ -40,12 +40,15 @@
                         </li>
                         @if (SignInManager.IsSignedIn(User)) 
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Staff" asp-action="Index">Edit Staff</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="VirtualTour" asp-action="Index">Edit Virtual Tour</a>
-                            </li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Action
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Staff" asp-action="Index">Edit Staff</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="VirtualTour" asp-action="Index">Edit Virtual Tour</a>
+                                </div>
+                            </div>
                         }
                     </ul>
                     <partial name="_LoginPartial" />
