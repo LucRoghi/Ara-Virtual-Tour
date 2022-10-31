@@ -46,3 +46,12 @@ button.accept-policy[b-j7arlhhhl5] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+.iframe_container[b-j7arlhhhl5] {
+  background-image: url("wwwroot/assets/loading.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.iframe_container iframe[b-j7arlhhhl5] {
+  background: transparent;
+}
