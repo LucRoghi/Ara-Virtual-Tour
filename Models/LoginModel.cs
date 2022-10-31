@@ -6,9 +6,9 @@ namespace AraVirtualTour.Models
     {
         [Required (ErrorMessage = "Email Address is required")]
         [Display(Name = "Email Address")]
-        public string EmailAddress { get; set; }
+        public string? EmailAddress { get; set; }
         [Required]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public string? Password { get; set; }
     }
 }

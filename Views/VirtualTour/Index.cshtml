@@ -1,13 +1,18 @@
 @model IEnumerable<AraVirtualTour.VirtualTourModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Edit Virtual Tour Link";
 }
 
-<h1>Index</h1>
+<h1>Edit Link</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @{
+        if (Model.Count() < 1) {
+            <a asp-action="Create">Create New</a>
+        }
+    }
+    
 </p>
 <table class="table">
     <thead>

@@ -7,7 +7,13 @@
 <h1>Virtual Tour</h1>
 
 @foreach (var item in Model) {
-        <iframe src=@Html.DisplayFor(modelItem => item.Link) frameborder="0" width="100%" height="400px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+        <iframe src=@Html.DisplayFor(modelItem => item.Link) frameborder="0" width="100%" height="800px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+}
+
+@if (Model.Count() == 0) {
+    <div class="alert alert-danger" role="alert">
+        A link for the Virtual Tour has not been added. Please contact the Administrator to resolve the issue.
+    </div>
 }
 
 

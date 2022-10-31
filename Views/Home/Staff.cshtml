@@ -4,7 +4,8 @@
     ViewData["Title"] = "Meet the Staff";
 }
 
-@foreach (var item in Model) {
+<div class="container">
+    @foreach (var item in Model) {
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src=".../100px180/" alt="Card image cap">
         <div class="card-body">
@@ -12,4 +13,5 @@
             <p class="card-text">@Html.DisplayFor(modelItem => item.Title) In @Html.DisplayFor(modelItem => item.Department)</p>
         </div>
     </div>
-}
+    }
+</div>
