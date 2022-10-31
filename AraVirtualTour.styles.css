@@ -1,0 +1,8 @@
+.iframe_container {
+    background-image: url("http://www.ajaxload.info/images/exemples/25.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iframe_container iframe {
+    background: transparent;
+}
