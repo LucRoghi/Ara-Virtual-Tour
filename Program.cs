@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using AraVirtualTour.Models;
 using AraVirtualTour.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using AraVirtualTour;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,16 +20,18 @@ builder.Services.AddDbContext<AraVirtualTour.AppContext>(options =>
     options.UseSqlite(connectionString));
 
 builder.Services.AddIdentity<AraVirtualTour.AppUserModel, IdentityRole>()
-    .AddEntityFrameworkStores<AraVirtualTour.AppContext>();
+    .AddEntityFrameworkStores<AraVirtualTour.AppContext>()
+    .AddDefaultUI()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddMemoryCache();
 
 builder.Services.AddSession();
 
+builder.Services.AddRazorPages();
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
        .AddCookie();
-
-builder.Services.AddCoreAdmin("admin");
 
 var app = builder.Build();
 
@@ -51,6 +54,7 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 
@@ -58,10 +62,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapControllerRoute(
-    name: "Staff",
-    pattern: "{controller=Administration}/{action=Staff}/{id}");
-
-app.MapDefaultControllerRoute();
+app.MapRazorPages();
 
 app.Run();
