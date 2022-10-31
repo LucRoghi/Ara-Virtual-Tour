@@ -28,27 +28,38 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet]
     public async Task<IActionResult> Staff()
     {
         return View(await _context.StaffModel.ToListAsync());
     }
 
+    [HttpGet]
     public IActionResult UsingAraResources()
     {
         return View();
     }
 
+    [HttpGet]
     public async Task<IActionResult> VirtualTour()
     {
         return View(await _context.VirtualTourModel.ToListAsync());
     }
 
+    [HttpGet]
     public IActionResult Privacy()
     {
         return View();
     }
 
+    [HttpGet]
     public IActionResult Login()
+    {
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult Credit()
     {
         return View();
     }

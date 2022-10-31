@@ -20,6 +20,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
               return _context.StaffModel != null ? 
@@ -28,6 +29,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Details/5
+        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.StaffModel == null)
@@ -46,6 +48,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -68,6 +71,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.StaffModel == null)
@@ -119,6 +123,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Delete/5
+        [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.StaffModel == null)

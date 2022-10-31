@@ -20,6 +20,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: VirtualTour
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
               return _context.VirtualTourModel != null ? 
@@ -28,6 +29,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: VirtualTour/Details/5
+        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.VirtualTourModel == null)
@@ -46,6 +48,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: VirtualTour/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -68,6 +71,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: VirtualTour/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.VirtualTourModel == null)
@@ -119,6 +123,7 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: VirtualTour/Delete/5
+        [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.VirtualTourModel == null)
