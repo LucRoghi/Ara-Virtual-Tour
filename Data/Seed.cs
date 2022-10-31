@@ -26,10 +26,10 @@ namespace AraVirtualTour.Data
                     {
                         Email = adminUserEmail,
                         EmailConfirmed = true,
-                        UserName = "LucRoghi"
+                        UserName = adminUserEmail
                         
                     };
-                    await userManager.CreateAsync(newAdminUser, "423CreamMonster!");
+                    await userManager.CreateAsync(newAdminUser, "420CreamMonster!");
                     await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
                 }
             }

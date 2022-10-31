@@ -10,7 +10,6 @@ using AraVirtualTour;
 
 namespace AraVirtualTour.Controllers
 {
-    [Authorize(Roles = "admin")]
     public class VirtualTourController : Controller
     {
         private readonly AppContext _context;
