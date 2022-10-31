@@ -28,9 +28,11 @@ builder.Services.AddSession();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
        .AddCookie();
 
-builder.Services.AddCoreAdmin("Admin");
+builder.Services.AddCoreAdmin("admin");
 
 var app = builder.Build();
+
+
 
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
 {
@@ -55,5 +57,11 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "Staff",
+    pattern: "{controller=Administration}/{action=Staff}/{id}");
+
+app.MapDefaultControllerRoute();
 
 app.Run();

@@ -23,6 +23,12 @@ public class AccountController : Controller
         return View(response);
     }
 
+    [HttpGet]
+    public IActionResult AdminPanel()
+    {
+        return View();
+    }
+
     [HttpPost]
     public async Task<IActionResult> Login(LoginModel loginModel)
     {
