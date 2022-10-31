@@ -4,7 +4,7 @@
 
 namespace AraVirtualTour.Migrations
 {
-    public partial class FixInitialCreate : Migration
+    public partial class UpdateAppUserModel3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

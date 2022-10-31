@@ -11,15 +11,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AraVirtualTour.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20221030132019_AddedRestOfModelsToMigrations")]
-    partial class AddedRestOfModelsToMigrations
+    [Migration("20221031131857_UpdateAppUserModel")]
+    partial class UpdateAppUserModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");
 
-            modelBuilder.Entity("AraVirtualTour.AppUser", b =>
+            modelBuilder.Entity("AraVirtualTour.AppUserModel", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
@@ -37,14 +37,6 @@ namespace AraVirtualTour.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("INTEGER");
@@ -68,10 +60,6 @@ namespace AraVirtualTour.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
@@ -102,15 +90,12 @@ namespace AraVirtualTour.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Department")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");
@@ -124,8 +109,7 @@ namespace AraVirtualTour.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("link")
-                        .IsRequired()
+                    b.Property<string>("Link")
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");
@@ -272,7 +256,7 @@ namespace AraVirtualTour.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("AraVirtualTour.AppUser", null)
+                    b.HasOne("AraVirtualTour.AppUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -281,7 +265,7 @@ namespace AraVirtualTour.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("AraVirtualTour.AppUser", null)
+                    b.HasOne("AraVirtualTour.AppUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -296,7 +280,7 @@ namespace AraVirtualTour.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AraVirtualTour.AppUser", null)
+                    b.HasOne("AraVirtualTour.AppUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -305,7 +289,7 @@ namespace AraVirtualTour.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("AraVirtualTour.AppUser", null)
+                    b.HasOne("AraVirtualTour.AppUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

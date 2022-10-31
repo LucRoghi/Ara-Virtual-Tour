@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using AraVirtualTour.Models;
+using AraVirtualTour.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,9 +20,22 @@ builder.Services.AddDbContext<AraVirtualTour.AppContext>(options =>
 
 builder.Services.AddIdentity<AraVirtualTour.AppUserModel, IdentityRole>()
     .AddEntityFrameworkStores<AraVirtualTour.AppContext>();
-builder.Services.AddCoreAdmin();
+
+builder.Services.AddMemoryCache();
+
+builder.Services.AddSession();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+       .AddCookie();
+
+builder.Services.AddCoreAdmin("Admin");
 
 var app = builder.Build();
+
+if (args.Length == 1 && args[0].ToLower() == "seeddata")
+{
+    await Seed.SeedUsersAndRolesAsync(app);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

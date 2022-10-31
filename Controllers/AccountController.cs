@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using AraVirtualTour.Models;
+using System;
 
 namespace AraVirtualTour.Controllers;
 public class AccountController : Controller
@@ -18,7 +19,8 @@ public class AccountController : Controller
     [HttpGet]
     public IActionResult Login()
     {
-        return View();
+        var response = new LoginModel();
+        return View(response);
     }
 
     [HttpPost]
@@ -26,7 +28,7 @@ public class AccountController : Controller
     {
         if(!ModelState.IsValid) return View(loginModel);
         var user = await _userManager.FindByEmailAsync(loginModel.EmailAddress);
-
+        
         if (user != null)
         {
             var passwordCheck = await _userManager.CheckPasswordAsync(user, loginModel.Password);
@@ -35,14 +37,14 @@ public class AccountController : Controller
                 var result = await _signInManager.PasswordSignInAsync(user, loginModel.Password, false, false);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Home", "Index");
+                    return RedirectToAction("Index", "Home");
                 }
             }
             TempData["Error"] = "Wrong credentials. Please try again";
-            return View(loginModel);
+            return View();
         }
         TempData["Error"] = "Wrong credentials. Please try again";
-        return View(loginModel);
+        return View();
     } 
 }
   

@@ -25,8 +25,6 @@ namespace AraVirtualTour
             var connectionString = configuration.GetConnectionString("AppDB");
             options.UseSqlite(connectionString);
         }
-
-        public DbSet<AppUserModel>? AppUser { get; set; }
         public DbSet<StaffModel>? StaffModel { get; set; }
         public DbSet<VirtualTourModel>? VirtualTourModel { get; set; }
 

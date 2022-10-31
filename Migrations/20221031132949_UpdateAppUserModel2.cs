@@ -4,7 +4,7 @@
 
 namespace AraVirtualTour.Migrations
 {
-    public partial class AddedNewDBPath : Migration
+    public partial class UpdateAppUserModel2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
