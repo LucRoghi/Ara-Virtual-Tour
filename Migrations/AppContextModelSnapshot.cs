@@ -17,25 +17,6 @@ namespace AraVirtualTour.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");
 
-            modelBuilder.Entity("AraVirtualTour.AppFile", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<byte[]>("Content")
-                        .IsRequired()
-                        .HasColumnType("BLOB");
-
-                    b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("id");
-
-                    b.ToTable("AppFile");
-                });
-
             modelBuilder.Entity("AraVirtualTour.AppUserModel", b =>
                 {
                     b.Property<string>("Id")
@@ -109,9 +90,6 @@ namespace AraVirtualTour.Migrations
                     b.Property<string>("Department")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("Imageid")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
@@ -119,8 +97,6 @@ namespace AraVirtualTour.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");
-
-                    b.HasIndex("Imageid");
 
                     b.ToTable("StaffModel");
                 });
@@ -265,15 +241,6 @@ namespace AraVirtualTour.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("AraVirtualTour.StaffModel", b =>
-                {
-                    b.HasOne("AraVirtualTour.AppFile", "Image")
-                        .WithMany()
-                        .HasForeignKey("Imageid");
-
-                    b.Navigation("Image");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

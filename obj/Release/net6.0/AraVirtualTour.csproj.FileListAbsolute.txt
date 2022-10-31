@@ -53,8 +53,6 @@
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/runtimes/win-x86/native/e_sqlite3.dll
 /home/ubuntu/AraVirtualTour/obj/Release/net6.0/AraVirtualTour.csproj.CopyComplete
-/home/ubuntu/AraVirtualTour/bin/Release/net6.0/DotNetEd.CoreAdmin.dll
-/home/ubuntu/AraVirtualTour/bin/Release/net6.0/Mvc.Grid.Core.dll
 /home/ubuntu/AraVirtualTour/obj/Release/net6.0/AraVirtualTour.MvcApplicationPartsAssemblyInfo.cs
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll

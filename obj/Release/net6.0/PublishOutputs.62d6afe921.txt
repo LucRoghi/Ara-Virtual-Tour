@@ -4,7 +4,6 @@
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.runtimeconfig.json
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/AraVirtualTour.pdb
-/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/DotNetEd.CoreAdmin.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Humanizer.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/MessagePack.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/MessagePack.Annotations.dll
@@ -54,7 +53,6 @@
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Microsoft.Win32.SystemEvents.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Newtonsoft.Json.dll
-/home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/Mvc.Grid.Core.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/NuGet.Common.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/NuGet.Configuration.dll
 /home/ubuntu/AraVirtualTour/bin/Release/net6.0/publish/NuGet.DependencyResolver.Core.dll

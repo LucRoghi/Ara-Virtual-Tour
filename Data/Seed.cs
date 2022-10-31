@@ -9,6 +9,11 @@ namespace AraVirtualTour.Data
         {
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
+                var context = serviceScope.ServiceProvider.GetService<AppContext>();
+
+                context.Database.EnsureCreated();
+
+                context.SaveChanges();
                 //Roles
                 var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
