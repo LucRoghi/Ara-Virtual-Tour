@@ -16370,6 +16370,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ubuntu/AraVirtualTour/Views/Shared/_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ubuntu/AraVirtualTour/Views/Account/AdminPanel.cshtml",
       "TargetPath": "Views\\Account\\AdminPanel.cshtml",
       "FileKind": "mvc"
