@@ -227,6 +227,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/ubuntu/AraVirtualTour/Views/Tools/Moodle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVG9vbHMvTW9vZGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ubuntu/AraVirtualTour/Views/Tools/Myara.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVG9vbHMvTXlhcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ubuntu/AraVirtualTour/Views/VirtualTour/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlydHVhbFRvdXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
