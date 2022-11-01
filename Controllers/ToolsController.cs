@@ -31,4 +31,10 @@ public class ToolsController : Controller
     {
         return View();
     }
+
+    [HttpGet]
+    public IActionResult UsingAraResources()
+    {
+        return View();
+    }
 }

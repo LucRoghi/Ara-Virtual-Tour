@@ -10,6 +10,7 @@ using AraVirtualTour;
 
 namespace AraVirtualTour.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class StaffController : Controller
     {
         private readonly AppContext _context;
@@ -45,6 +46,14 @@ namespace AraVirtualTour.Controllers
             }
 
             return View(staffModel);
+        }
+
+        // GET: Staff/Staff
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Staff()
+        {
+            return View(await _context.StaffModel.ToListAsync());
         }
 
         // GET: Staff/Create

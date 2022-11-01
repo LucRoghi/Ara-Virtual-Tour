@@ -29,24 +29,6 @@ public class HomeController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> Staff()
-    {
-        return View(await _context.StaffModel.ToListAsync());
-    }
-
-    [HttpGet]
-    public IActionResult UsingAraResources()
-    {
-        return View();
-    }
-
-    [HttpGet]
-    public async Task<IActionResult> VirtualTour()
-    {
-        return View(await _context.VirtualTourModel.ToListAsync());
-    }
-
-    [HttpGet]
     public IActionResult Privacy()
     {
         return View();

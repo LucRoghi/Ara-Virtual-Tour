@@ -10,6 +10,7 @@ using AraVirtualTour;
 
 namespace AraVirtualTour.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class VirtualTourController : Controller
     {
         private readonly AppContext _context;
@@ -52,6 +53,14 @@ namespace AraVirtualTour.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        //GET: VirtualTour/VirtualTour
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> VirtualTour()
+        {
+            return View(await _context.VirtualTourModel.ToListAsync());
         }
 
         // POST: VirtualTour/Create

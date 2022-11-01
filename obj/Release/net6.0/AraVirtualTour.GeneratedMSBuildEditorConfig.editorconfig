@@ -187,14 +187,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TdGFmZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ubuntu/AraVirtualTour/Views/Home/UsingAraResources.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Vc2luZ0FyYVJlc291cmNlcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/ubuntu/AraVirtualTour/Views/Home/VirtualTour.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WaXJ0dWFsVG91ci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/ubuntu/AraVirtualTour/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -235,6 +227,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVG9vbHMvTXlhcmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/ubuntu/AraVirtualTour/Views/Tools/UsingAraResources.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVG9vbHMvVXNpbmdBcmFSZXNvdXJjZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ubuntu/AraVirtualTour/Views/VirtualTour/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlydHVhbFRvdXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -253,6 +249,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/ubuntu/AraVirtualTour/Views/VirtualTour/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlydHVhbFRvdXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ubuntu/AraVirtualTour/Views/VirtualTour/VirtualTour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlydHVhbFRvdXIvVmlydHVhbFRvdXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ubuntu/AraVirtualTour/Views/_ViewImports.cshtml]
