@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AraVirtualTour;
 
 namespace AraVirtualTour.Controllers
 {
-    [Authorize(Roles = "admin")]
     public class StaffController : Controller
     {
         private readonly AppContext _context;
@@ -21,7 +19,6 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff
-        [HttpGet]
         public async Task<IActionResult> Index()
         {
               return _context.StaffModel != null ? 
@@ -30,7 +27,6 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Details/5
-        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.StaffModel == null)
@@ -48,16 +44,7 @@ namespace AraVirtualTour.Controllers
             return View(staffModel);
         }
 
-        // GET: Staff/Staff
-        [HttpGet]
-        [AllowAnonymous]
-        public async Task<IActionResult> Staff()
-        {
-            return View(await _context.StaffModel.ToListAsync());
-        }
-
         // GET: Staff/Create
-        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -68,7 +55,7 @@ namespace AraVirtualTour.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,Title,Name,Department")] StaffModel staffModel)
+        public async Task<IActionResult> Create([Bind("id,Title,Name,Department,Image")] StaffModel staffModel)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +67,6 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Edit/5
-        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.StaffModel == null)
@@ -101,7 +87,7 @@ namespace AraVirtualTour.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,Title,Name,Department")] StaffModel staffModel)
+        public async Task<IActionResult> Edit(int id, [Bind("id,Title,Name,Department,Image")] StaffModel staffModel)
         {
             if (id != staffModel.id)
             {
@@ -132,7 +118,6 @@ namespace AraVirtualTour.Controllers
         }
 
         // GET: Staff/Delete/5
-        [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.StaffModel == null)
