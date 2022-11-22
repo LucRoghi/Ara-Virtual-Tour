@@ -1,0 +1,8 @@
+.iframe_container {
+    background-image: url('~/images/loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iframe_container iframe {
+    background: transparent;
+}
