@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AraVirtualTour;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AraVirtualTour.Controllers
 {
@@ -16,6 +17,14 @@ namespace AraVirtualTour.Controllers
         public StaffController(AppContext context)
         {
             _context = context;
+        }
+
+        //GET: VirtualTour/VirtualTour
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Staff()
+        {
+            return View(await _context.StaffModel.ToListAsync());
         }
 
         // GET: Staff
