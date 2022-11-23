@@ -4,14 +4,17 @@
     ViewData["Title"] = "Meet the Staff";
 }
 
-<div class="d-flex p-2">
+<div class="row row-cols-1 row-cols-md-3 g-4">
     @foreach (var item in Model) {
-    <div class="card" style="width: 18rem; margin: 20px">
-        <img class="card-img-top" src=".../100px180/" alt="Card image placeholder">
-        <div class="card-body">
-            <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
-            <p class="card-text">@Html.DisplayFor(modelItem => item.Title) In @Html.DisplayFor(modelItem => item.Department)</p>
+    <div class="col">
+        <div class="card">
+            <img class="card-img-top" src=".../100px180/" alt="Card image placeholder">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.Title) In @Html.DisplayFor(modelItem => item.Department)</p>
+            </div>
         </div>
     </div>
+    
     }
 </div>

@@ -15,4 +15,18 @@ html {
 
 body {
   margin-bottom: 60px;
+  background: rgb(44,189,205);
+  background: linear-gradient(172deg, rgba(44,189,205,1) 0%, rgba(79,23,139,1) 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+p {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.25);
 }

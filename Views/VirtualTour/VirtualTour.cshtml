@@ -3,13 +3,13 @@
 @{
     ViewData["Title"] = "Virtual Tour";
 }
-<link rel="stylesheet" href="~/css/virtualtour.css">
+
 <h1>Virtual Tour</h1>
 
 @foreach (var item in Model) {
-    <div class="iframe_container">
-        <iframe src=@Html.DisplayFor(modelItem => item.Link) frameborder="0" width="100%" height="700px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
-    </div>
+        <div class="iframe_container">
+            <iframe src=@Html.DisplayFor(modelItem => item.Link) frameborder="0" width="100%" height="700px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+        </div>
 }
 
 @if (Model.Count() == 0) {

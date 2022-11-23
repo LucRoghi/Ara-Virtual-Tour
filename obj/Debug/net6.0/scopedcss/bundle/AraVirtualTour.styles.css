@@ -46,6 +46,7 @@ button.accept-policy[b-j7arlhhhl5] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  z-index: -1;
 }
 
 .iframe_container[b-j7arlhhhl5] {
